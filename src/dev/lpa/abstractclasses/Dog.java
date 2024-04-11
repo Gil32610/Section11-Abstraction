@@ -1,6 +1,6 @@
 package dev.lpa.abstractclasses;
 
-public class Dog extends Animal{
+public class Dog extends Mammal{
     public Dog(String type, String size, double weight) {
         super(type, size, weight);
     }
@@ -8,8 +8,8 @@ public class Dog extends Animal{
     @Override
     public void move(String speed) {
         if(speed== "slow"){
-            System.out.println(type + " walking");
-        }else System.out.println(type + " running");
+            System.out.println(getExplicitType() + " walking");
+        }else System.out.println(getExplicitType() + " running");
     }
 
     @Override
@@ -19,5 +19,10 @@ public class Dog extends Animal{
         }else{
             System.out.println("Woof!");
         }
+    }
+
+    @Override
+    public void shedHair() {
+        System.out.println(getExplicitType()+ " shed hair all the time!");
     }
 }
