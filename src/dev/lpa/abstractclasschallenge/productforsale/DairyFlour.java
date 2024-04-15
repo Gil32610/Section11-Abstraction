@@ -7,6 +7,6 @@ public class DairyFlour extends ProductForSale {
 
     @Override
     public void showDetails() {
-        System.out.println();
+        System.out.println(getClass().getSimpleName() + ": The most delicious snack ever");
     }
 }

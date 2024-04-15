@@ -7,6 +7,6 @@ public class ToothPaste extends ProductForSale {
 
     @Override
     public void showDetails() {
-
+        System.out.println(getClass().getSimpleName()+": Anti cavities and maximum protection");
     }
 }

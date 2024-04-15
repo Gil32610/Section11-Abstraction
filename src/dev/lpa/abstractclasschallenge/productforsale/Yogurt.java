@@ -1,7 +1,5 @@
 package dev.lpa.abstractclasschallenge.productforsale;
 
-import dev.lpa.abstractclasschallenge.productforsale.ProductForSale;
-
 public class Yogurt extends ProductForSale {
     public Yogurt(String type, double price, String description) {
         super(type, price, description);
@@ -9,6 +7,6 @@ public class Yogurt extends ProductForSale {
 
     @Override
     public void showDetails() {
-
+        System.out.println(getClass().getSimpleName() + ": Healthy yogurt!");
     }
 }
