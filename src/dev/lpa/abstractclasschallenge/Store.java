@@ -24,4 +24,18 @@ public class Store {
             product.showDetails();
         }
     }
+
+    public static void addItemToOrder(ArrayList<OrderItem> order, int orderIndex, int quantity){
+        order.add(new OrderItem(quantity, products.get(orderIndex)));
+    }
+
+    public static void printOrder(ArrayList<OrderItem> order){
+        double salesTotal = 0;
+        for(OrderItem item: order){
+            item.productForSale().printPriceLineItem(item.quantity());
+            salesTotal+= item.productForSale().getSalesPrice(item.quantity());
+        }
+        System.out.printf("Total sales amount  = $%6.2f %n", salesTotal);
+
+    }
 }
