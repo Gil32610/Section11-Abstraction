@@ -7,8 +7,8 @@ public class PersonalHygieneProduct extends ProductForSale {
 
     @Override
     public void showDetails() {
-        System.out.println(getClass().getSimpleName()+": "+ type);
-        System.out.printf("Price of product $%6.2f%n", price);
+        System.out.printf("This %s product is for cleaning purposes%n", type);
+        System.out.printf("Price of utensil $%6.2f%n", price);
         System.out.println(description);
     }
 }

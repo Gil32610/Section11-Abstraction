@@ -21,6 +21,8 @@ public abstract class ProductForSale {
         System.out.printf("%2d quantity at $%8.2f each, %-15s %-35s %n", quantity, price, type, description);
     }
 
+    //This method should perform an operation specific for each class that extends this abstract class!
+    //An individual implementation is required for every class that extends this class
     public abstract void showDetails();
 
 

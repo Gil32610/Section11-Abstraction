@@ -7,7 +7,7 @@ public class DairyProduct extends ProductForSale {
 
     @Override
     public void showDetails() {
-        System.out.println(getClass().getSimpleName()+": "+ type);
+        System.out.printf("This is a %s dairy product, maintain in a cold environment%n",type);
         System.out.printf("Price of product $%6.2f%n", price);
         System.out.println(description);
     }

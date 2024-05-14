@@ -16,6 +16,21 @@ public class Store {
         products.add(new DairyProduct("Drink Yogurt Fruit Mix", 18.00, "This yogurt is perfect for restricted lactose diets"));
         products.add(new PersonalHygieneProduct("Tooth paste Colgate", 3.00, "Protect your teeth from cavities"));
         listProducts();
+
+        System.out.println("First Order:");
+        var order1 = new ArrayList<OrderItem>();
+        addItemToOrder(order1, 0, 20);
+        addItemToOrder(order1, 2, 3);
+        addItemToOrder(order1, 1, 5);
+        printOrder(order1);
+
+        System.out.println("Second Order:");
+        var order2 = new ArrayList<OrderItem>();
+        addItemToOrder(order2, 0, 50);
+        printOrder(order2);
+        System.out.println("Just can't hold myself back.....");
+
+
     }
 
     public static void listProducts(){
